@@ -79,10 +79,10 @@ Increased sparsity vs. time (three implementations) | Increased sparsity vs incr
 * Sparse clouds
 
 Taj.Mahal  
-<img src="img/sfmresult2.gif)  
+<img src="img/sfmresult2.gif" width="700"> 
 
 Tsinghua.Life.Science 
-<img src="img/sfmresult3.gif) 
+<img src="img/sfmresult3.gif" width="700">
 
 Dataset sources: 
 
