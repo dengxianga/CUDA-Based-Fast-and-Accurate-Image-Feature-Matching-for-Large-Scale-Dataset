@@ -25,7 +25,7 @@ An example of ‘large scale’ dataset: ~1000 camera pictures for a scene,~ 600
 
 Algorithm review (1)  | Algorithm review (2)
 :-------------------------:  |:-------------------------: 
-![](img/Picture1.png)  | ![](img/Picture2.png) 
+<img src="img/Picture1.png" width="450">  | <img src="img/Picture2.png" width="450"> 
 
 Source from [1], http://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Cheng_Fast_and_Accurate_2014_CVPR_paper.pdf
 
@@ -58,31 +58,31 @@ http://vision.ia.ac.cn/data/index.html
 
 8 bits, 6 tables t| 8 bits, 6 tables
 :-------------------------:  |:-------------------------: 
-![](img/Picture5.png)  | ![](img/Picture6.png) 
+<img src="img/Picture5.png" width="450">  | <img src="img/Picture6.png" width="450"> 
 
 10 bits, 6 tables | 10 bits, 6 tables
 :-------------------------:  |:-------------------------: 
-![](img/Picture7.png)  | ![](img/Picture8.png) 
+<img src="img/Picture7.png" width="450">  | <img src="img/Picture8.png" width="450"> 
 
 12 bits, 6 tables | 12 bits, 6 tables
 :-------------------------:  |:-------------------------: 
-![](img/Picture9.png)  | ![](img/Picture10.png) 
+<img src="img/Picture9.png" width="450">  | <img src="img/Picture10.png" width="450"> 
 
 # In summary
 
 Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
 :-------------------------:  |:-------------------------: 
-![](img/Picture11.png)  | ![](img/Picture12.png) 
+<img src="img/Picture11.png" width="450">  | <img src="img/Picture12.png" width="450"> 
 
 # SfM demos on Large dataset
 
 * Sparse clouds
 
 Taj.Mahal  
-![](img/sfmresult2.gif)  
+<img src="img/sfmresult2.gif)  
 
 Tsinghua.Life.Science 
-![](img/sfmresult3.gif) 
+<img src="img/sfmresult3.gif) 
 
 Dataset sources: 
 
