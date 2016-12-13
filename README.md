@@ -17,7 +17,7 @@ An example of ‘large scale’ dataset: ~1000 camera pictures for a scene,~ 600
 
 # Algorithm Overview
 
-* Image Matching Pipeline [1]
+* Original image Matching Pipeline [1]
 ** Multi table (L tables) Hashing (feature descriptors (eg. SIFT (128 integers) binary hash codes (128 bits * L) )
 ** Candidates Look-up &Fetching O(L) 
 * Candidates ranking O(k : number of candidates) in Hamming space
@@ -36,6 +36,11 @@ Source from [1], http://www.cv-foundation.org/openaccess/content_cvpr_2014/paper
 
 The slides from Prof. Jianbo Shi that best describes this http://cis.upenn.edu/~cis580/Spring2016/Lectures/cis580-18-coursera-2016-SfM-fulll.pdf
 
+# GPU implementation details
+
+* Optimization: Global shared buffers for data storage + buffers per thread for quick sorting of candidate list 
+* More descriptions comming soon.
+
 # Sample results
 
 Sample Result (1)  | Sample Result (2)
@@ -49,7 +54,7 @@ http://vision.ia.ac.cn/data/index.html
 
 * Sparsity of data structure (number of hash bits) vs. total time consumed vs. speed up  
 
-* Testing on three implementations: original algorithm on CPU, GPU, and slightly improved GPU version that borrows some ideas mentioned in the new draft of paper.
+* Testing on three implementations: original algorithm on CPU, GPU, and slightly improved GPU version that borrows some ideas mentioned in my new draft of paper (not submitted yet).
 
 8 bits, 6 tables t| 8 bits, 6 tables
 :-------------------------:  |:-------------------------: 
