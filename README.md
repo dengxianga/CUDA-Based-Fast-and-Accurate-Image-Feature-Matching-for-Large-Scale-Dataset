@@ -45,7 +45,7 @@ The slides from Prof. Jianbo Shi that best describes this http://cis.upenn.edu/~
 
 Sample Result (1)  | Sample Result (2)
 :-------------------------:  |:-------------------------: 
-![](img/Picture3.png)  | ![](img/Picture4.png) 
+<img src="img/Picture3.png" width="300"> |<img src="img/Picture4.png" width="300">
 
 Tsinghua Database, 1
 http://vision.ia.ac.cn/data/index.html
