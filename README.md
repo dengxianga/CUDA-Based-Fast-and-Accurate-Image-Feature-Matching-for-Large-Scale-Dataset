@@ -25,7 +25,7 @@ An example of ‘large scale’ dataset: ~1000 camera pictures for a scene,~ 600
 
 Algorithm review (1)  | Algorithm review (2)
 :-------------------------:  |:-------------------------: 
-![](img/Picture1.png| width=300)  | ![](img/Picture2.png| width=300) 
+![](img/Picture1.png)  | ![](img/Picture2.png) 
 
 Source from [1], http://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Cheng_Fast_and_Accurate_2014_CVPR_paper.pdf
 
@@ -40,7 +40,7 @@ The slides from Prof. Jianbo Shi that best describes this http://cis.upenn.edu/~
 
 Sample Result (1)  | Sample Result (2)
 :-------------------------:  |:-------------------------: 
-![](img/Picture3.png =300)  | ![](img/Picture4.png| width=300) 
+![](img/Picture3.png)  | ![](img/Picture4.png) 
 
 Tsinghua Database, 1
 http://vision.ia.ac.cn/data/index.html
@@ -53,29 +53,31 @@ http://vision.ia.ac.cn/data/index.html
 
 8 bits, 6 tables t| 8 bits, 6 tables
 :-------------------------:  |:-------------------------: 
-![](img/Picture5.png| width=300)  | ![](img/Picture6.png| width=300) 
+![](img/Picture5.png)  | ![](img/Picture6.png) 
 
 10 bits, 6 tables | 10 bits, 6 tables
 :-------------------------:  |:-------------------------: 
-![](img/Picture7.png| width=300)  | ![](img/Picture8.png| width=300) 
+![](img/Picture7.png)  | ![](img/Picture8.png) 
 
 12 bits, 6 tables | 12 bits, 6 tables
 :-------------------------:  |:-------------------------: 
-![](img/Picture9.png| width=300)  | ![](img/Picture10.png | width=300) 
+![](img/Picture9.png)  | ![](img/Picture10.png) 
 
 # In summary
 
 Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
 :-------------------------:  |:-------------------------: 
-![](img/Picture11.png| width=300)  | ![](img/Picture12.png| width=300) 
+![](img/Picture11.png)  | ![](img/Picture12.png) 
 
 # SfM demos on Large dataset
 
 * Sparse clouds
 
-Taj.Mahal | Tsinghua.Life.Science
-:-------------------------:  |:-------------------------: 
-![](img/sfmresult2.gif | width=300)  | ![](img/sfmresult3.gif | width=300) 
+Taj.Mahal  
+![](img/sfmresult2.gif)  
+
+Tsinghua.Life.Science 
+![](img/sfmresult3.gif) 
 
 Dataset sources: 
 
