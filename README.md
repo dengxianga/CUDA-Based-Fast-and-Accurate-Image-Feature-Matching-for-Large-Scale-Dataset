@@ -60,3 +60,9 @@ http://vision.ia.ac.cn/data/index.html
 12 bits, 6 tables | 12 bits, 6 tables
 :-------------------------:  |:-------------------------: 
 ![](img/Picture9.png)  | ![](img/Picture10.png) 
+
+# In summary
+
+Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
+:-------------------------:  |:-------------------------: 
+![](img/Picture11.png)  | ![](img/Picture12.png) 
