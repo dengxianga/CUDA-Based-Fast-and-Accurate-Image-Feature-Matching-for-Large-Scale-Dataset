@@ -25,7 +25,7 @@ An example of ‘large scale’ dataset: ~1000 camera pictures for a scene,~ 600
 
 Algorithm review (1)  | Algorithm review (2)
 :-------------------------:  |:-------------------------: 
-![](img/Picture1.png)  | ![](img/Picture1.png) 
+![](img/Picture1.png)  | ![](img/Picture2.png) 
 
 Source from [1], http://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Cheng_Fast_and_Accurate_2014_CVPR_paper.pdf
 
@@ -49,9 +49,14 @@ http://vision.ia.ac.cn/data/index.html
 
 * Sparsity of data structure (number of hash bits) vs. total time consumed vs. speed up  
 
+8 bits, 6 tables t| 8 bits, 6 tables
 :-------------------------:  |:-------------------------: 
 ![](img/Picture5.png)  | ![](img/Picture6.png) 
+
+10 bits, 6 tables | 10 bits, 6 tables
 :-------------------------:  |:-------------------------: 
 ![](img/Picture7.png)  | ![](img/Picture8.png) 
+
+12 bits, 6 tables | 12 bits, 6 tables
 :-------------------------:  |:-------------------------: 
 ![](img/Picture9.png)  | ![](img/Picture10.png) 
