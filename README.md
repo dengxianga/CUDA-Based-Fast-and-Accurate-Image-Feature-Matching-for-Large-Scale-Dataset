@@ -68,7 +68,7 @@ The sparity is charesterized by the number of hash bits we are using. The reason
 of the hash table structure: since all sift points are projected and quantized into hash codes, by controlling the 
 number of hash bits, similar features are more or less likely to be projected into a same hash bucket, which contains pointer to the candidate list.
  
-The following are the testing results:
+The following are the testing results (dataset: qinghuaxuetang):
 
 * Sparsity of data structure (number of hash bits) vs. total time consumed vs. speed up  
 
@@ -85,6 +85,16 @@ The following are the testing results:
 12 bits, 6 tables | 12 bits, 6 tables
 :-------------------------:  |:-------------------------: 
 <img src="img/Picture9.png" width="450">  | <img src="img/Picture10.png" width="450"> 
+
+* From the above testing results: 1. as the number of hash bits (sparsity) increases, the GPU speed up faster. This 
+makes sense because as the number of candidates being reduced per bucket, the computational load on the GPU side is 
+reduced in comparison to the CPU performance. (Each thread computes its own feature matching for each individual query hash code)
+One the other hand, we need to look at the precision performance. Altough it doesn't shows a pattern that the precision (represented by
+number of matches) is becoming reduced as the sparsity increases, we can observed a decreased performance in the improved precision algorithm.
+One underlying reasoning is because as the data structure become more and more sparse, the potential of successfuly finding the truc match is being reduced. 
+The improved algorithm requires the true candidate at least to appear in the candidate list.
+
+The figure above best summaries the analysis above.
 
 # In summary
 
