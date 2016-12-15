@@ -1,5 +1,8 @@
 # CUDA-Based-Fast-and-Accurate-Image-Feature-Matching-for-Large-Scale-Dataset
 
+## Xiang Deng
+## https://github.com/dengxianga/dengxianga.github.io
+
 (Date: 12/13/2016)
 
 # Background
@@ -90,3 +93,65 @@ Dataset sources:
 
 1. Flickr Database
 2. http://vision.ia.ac.cn/data/index.html
+
+# Debugging Views
+
+## Debug CPU vs GPU 
+
+** Comparing number of matches found
+** Comparing timing
+** outputing average number of features per query image
+
+```
+test Match images
+gpu match time 3.198976 ms
+num match found Gpu 1483
+cpu time lapsed 11.000000 ms
+num match found cpu 1471
+cntPoint 4845
+test Match images
+gpu match time 3.473408 ms
+num match found Gpu 412
+test Match images
+gpu match time 3.485696 ms
+num match found Gpu 412
+cpu time lapsed 12.000000 ms
+num match found cpu 396
+cntPoint 4443
+test Match images
+gpu match time 3.593216 ms
+num match found Gpu 648
+test Match images
+gpu match time 3.564544 ms
+num match found Gpu 648
+cpu time lapsed 11.000000 ms
+num match found cpu 645
+cntPoint 4845
+test Match images
+gpu match time 3.223552 ms
+num match found Gpu 22
+test Match images
+gpu match time 3.219424 ms
+num match found Gpu 22
+cpu time lapsed 9.000000 ms
+num match found cpu 17
+cntPoint 4443
+test Match images
+gpu match time 3.403776 ms
+num match found Gpu 138
+test Match images
+gpu match time 3.384320 ms
+num match found Gpu 138
+cpu time lapsed 8.000000 ms
+num match found cpu 123
+cntPoint 4443
+test Match images
+gpu match time 3.230720 ms
+num match found Gpu 738
+test Match images
+gpu match time 3.232768 ms
+num match found Gpu 738
+cpu time lapsed 10.000000 ms
+num match found cpu 721
+
+```
