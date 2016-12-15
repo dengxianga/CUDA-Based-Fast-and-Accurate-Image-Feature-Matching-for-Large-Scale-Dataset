@@ -22,13 +22,13 @@ An example of ‘large scale’ dataset: ~1000 camera pictures for a scene,~ 600
 
 * The original image Matching Pipeline [1] can be broke down into four major stages:
 
-## Multi table (L tables) Hashing (feature descriptors (eg. SIFT (128 integers) binary hash codes (128 bits * L) )
+	* Multi table (L tables) Hashing (feature descriptors (eg. SIFT (128 integers) binary hash codes (128 bits * L) )
 
-## Candidates Look-up &Fetching O(L) 
+	* Candidates Look-up &Fetching O(L) 
 
-## Candidates ranking O(k : number of candidates) in Hamming space
+	* Candidates ranking O(k : number of candidates) in Hamming space
 
-## Final validation in Euclidean space
+	* Final validation in Euclidean space
 
 Algorithm review (1)  | Algorithm review (2)
 :-------------------------:  |:-------------------------: 
