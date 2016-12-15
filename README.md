@@ -22,7 +22,7 @@ An example of ‘large scale’ dataset: ~1000 camera pictures for a scene,~ 600
 
 * The original image Matching Pipeline [1] can be broke down into four major stages:
 
-	* Multi table (L tables) Hashing (feature descriptors (eg. SIFT (128 integers) binary hash codes (128 bits * L) )
+	* Multi table (L tables) Hashing (feature descriptors (eg. SIFT (128 integers) binary hash codes (128 bits * L) )
 
 	* Candidates Look-up &Fetching O(L) 
 
@@ -67,11 +67,12 @@ http://vision.ia.ac.cn/data/index.html
 The sparity is charesterized by the number of hash bits we are using. The reasoning we are concerning about the sparsity is because
 of the hash table structure: since all sift points are projected and quantized into hash codes, by controlling the 
 number of hash bits, similar features are more or less likely to be projected into a same hash bucket, which contains pointer to the candidate list.
- The following are the testing results:
+ 
+The following are the testing results:
 
 * Sparsity of data structure (number of hash bits) vs. total time consumed vs. speed up  
 
-* Testing on three implementations: original algorithm on CPU, GPU, and slightly improved GPU version that borrows some ideas mentioned in my new draft of paper (not submitted yet).
+	* Testing on three implementations: original algorithm on CPU, GPU, and slightly improved GPU version that borrows some ideas mentioned in my new draft of paper (not submitted yet).
 
 8 bits, 6 tables t| 8 bits, 6 tables
 :-------------------------:  |:-------------------------: 
@@ -114,11 +115,11 @@ Dataset sources:
 
 * Text output
 
-### Comparing number of matches found
+	* Comparing number of matches found
 
-### Comparing timing
+	* Comparing timing
 
-### outputing average number of features per query image
+	* Outputing average number of features per query image
 
 
 ```
