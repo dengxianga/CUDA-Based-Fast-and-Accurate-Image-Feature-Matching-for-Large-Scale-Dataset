@@ -98,6 +98,8 @@ Dataset sources:
 
 ## Debug CPU vs GPU 
 
+* Text output
+
 ** Comparing number of matches found
 ** Comparing timing
 ** outputing average number of features per query image
@@ -155,3 +157,13 @@ cpu time lapsed 10.000000 ms
 num match found cpu 721
 
 ```
+
+* Image Output
+
+Matches: CPU pipline | Matches: GPU pipeline
+:-------------------------:  |:-------------------------: 
+<img src="img/matches_0_4_cpu_Cas.jpg" width="450">  | <img src="img/matches_gpu_0_4.jpg" width="450"> 
+
+Matches: CPU pipline | Matches: GPU pipeline
+:-------------------------:  |:-------------------------: 
+<img src="img/matches_4_5_cpu_Cas.jpg" width="450">  | <img src="img/matches_gpu_4_5.jpg" width="450"> 
