@@ -88,7 +88,7 @@ The following are the testing results (dataset: qinghuaxuetang):
 
 * From the above testing results: 1. as the number of hash bits (sparsity) increases, the GPU speed up faster. This 
 makes sense because as the number of candidates being reduced per bucket, the computational load on the GPU side is 
-reduced in comparison to the CPU performance. (Each thread computes its own feature matching for each individual query hash code)
+reduced relatively faster to the CPU performance. (in other words, the GPU has more disadvantage in the latency of compuation) Altough both approaches are becoming faster. (Each thread computes its own feature matching for each individual query hash code)
 One the other hand, we need to look at the precision performance. Altough it doesn't shows a pattern that the precision (represented by
 number of matches) is becoming reduced as the sparsity increases, we can observed a decreased performance in the improved precision algorithm.
 One underlying reasoning is because as the data structure become more and more sparse, the potential of successfuly finding the truc match is being reduced. 
@@ -101,6 +101,30 @@ The figure above best summaries the analysis above.
 Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
 :-------------------------:  |:-------------------------: 
 <img src="img/Picture11.png" width="450">  | <img src="img/Picture12.png" width="450"> 
+
+* Upon the testing on another dataset: norte dame, we can observe a similar pattern:
+
+8 bits, 6 tables t| 8 bits, 6 tables
+:-------------------------:  |:-------------------------: 
+<img src="img/Picture13.png" width="450">  | <img src="img/Picture14.png" width="450"> 
+
+10 bits, 6 tables | 10 bits, 6 tables
+:-------------------------:  |:-------------------------: 
+<img src="img/Picture15.png" width="450">  | <img src="img/Picture16.png" width="450"> 
+
+12 bits, 6 tables | 12 bits, 6 tables
+:-------------------------:  |:-------------------------: 
+<img src="img/Picture17.png" width="450">  | <img src="img/Picture18.png" width="450"> 
+
+Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
+:-------------------------:  |:-------------------------: 
+<img src="img/Picture19.png" width="450">  | <img src="img/Picture20.png" width="450"> 
+
+	* Analysis on the difference: in this case we do see a saturation of the speed up. This is essentially because that
+	the dataset norte dame from the Flickr contains the photos that are much more randomly taken by various touriests. Whereas the tsinghua dataset contains images
+	that are much more uniformly taken by a same camera in a smaller scene. In most case,
+	due to the difference in scaling, lighting and angle, it's less likely to find two images that are "close" to each other. In light of this reasoning,
+	we can see that the candidate list of feature matching will be a lot shorter. Because of this reason, the sparsity of the datastructure saturates earlier as we increase the number of bits.
 
 # SfM demos on Large dataset
 
