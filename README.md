@@ -315,6 +315,10 @@ Matches: CPU pipline | Matches: GPU pipeline
 
 # Build Intructions
 
-### Toolboxes needed: 1. OpenCV (for visual debugging) 2. PCL (optional, for visualizing point cloud)
-
+	* Toolboxes needed: 
+		* 1. OpenCV (for visual debugging)
+		* 2. PCL (optional, for visualizing point cloud)
+	* As usual, use the provided CmakeLists.txt and build the project.
+	* Make sure the openCV linkers are properly set up
+	* Please include the config.xml in the build folder, this is the file that specifies the debugging options.
 ###  
