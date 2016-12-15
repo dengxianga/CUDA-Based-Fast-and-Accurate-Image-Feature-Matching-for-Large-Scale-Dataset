@@ -3,7 +3,7 @@
 ## Xiang Deng
 ## https://github.com/dengxianga/dengxianga.github.io
 
-(Date: 12/13/2016)
+(Date: 12/15/2016)
 
 # Background
 
@@ -235,4 +235,7 @@ Matches: CPU pipline | Matches: GPU pipeline
 	* As usual, use the provided CmakeLists.txt and build the project.
 	* Make sure the openCV linkers are properly set up
 	* Please include the config.xml in the build folder, this is the file that specifies the debugging options.
+	* To run: the first argument should be the folder name to the sift features, the second argument should be the folder to the images
+	* This is currently a private repository: https://github.com/dengxianga/CIS-565-final-src
+	* The SfM implementation is contained in the 'SfM' folder. Please build following the similar procedure.
 ###  
