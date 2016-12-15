@@ -21,10 +21,10 @@ An example of ‘large scale’ dataset: ~1000 camera pictures for a scene,~ 600
 # Algorithm Overview
 
 * The original image Matching Pipeline [1] can be broke down into four major stages:
-** Multi table (L tables) Hashing (feature descriptors (eg. SIFT (128 integers) binary hash codes (128 bits * L) )
-** Candidates Look-up &Fetching O(L) 
-** Candidates ranking O(k : number of candidates) in Hamming space
-** Final validation in Euclidean space
+### Multi table (L tables) Hashing (feature descriptors (eg. SIFT (128 integers) binary hash codes (128 bits * L) )
+### Candidates Look-up &Fetching O(L) 
+### Candidates ranking O(k : number of candidates) in Hamming space
+### Final validation in Euclidean space
 
 Algorithm review (1)  | Algorithm review (2)
 :-------------------------:  |:-------------------------: 
@@ -110,9 +110,9 @@ Dataset sources:
 
 * Text output
 
-** Comparing number of matches found
-** Comparing timing
-** outputing average number of features per query image
+### Comparing number of matches found
+### Comparing timing
+### outputing average number of features per query image
 
 ```
 cntPoint 7718
@@ -273,5 +273,5 @@ Matches: CPU pipline | Matches: GPU pipeline
 
 # Build Intructions
 
-** Toolboxes needed: 1. OpenCV (for visual debugging) 2. PCL (optional, for visualizing point cloud)
-**  
+### Toolboxes needed: 1. OpenCV (for visual debugging) 2. PCL (optional, for visualizing point cloud)
+###  
