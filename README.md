@@ -45,6 +45,8 @@ The slides from Prof. Jianbo Shi that best describes this http://cis.upenn.edu/~
 
 # GPU implementation details
 
+Besides the basic implementations of the original paper on LSH image matching (as well as an improved GPU implementation), I typically concern about optimization.
+
 * Optimization: I used two techniques for quick candidate fetching and ranking: global shared buffers for data storage + buffers per thread for quick sorting of candidate list 
 The motivation for using globaling shared buffers is to store feature information (SIFT and Hash) in more place, and re-use them more efficiently. For example, to do full matching of 
 700 hundred images, we will have 700*699/2 image matching pairs, but we only have to preallocate memories and store feature informations for 700 image data.
@@ -157,134 +159,46 @@ Dataset sources:
 
 
 ```
-cntPoint 7718
-gpu match time 6.834176 ms
-num match found Gpu_I 769
+cntPoint 4845
+gpu match time 3.086336 ms
+num match found Gpu_I 396
 test Match images
-gpu match time 6.563840 ms
-num match found Gpu_II 808
-cpu time lapsed 20.000000 ms
-num match found cpu 769
-cntPoint 6251
-gpu match time 4.924416 ms
-num match found Gpu_I 3
-test Match images
-gpu match time 4.724736 ms
-num match found Gpu_II 3
-cpu time lapsed 17.000000 ms
-num match found cpu 3
-cntPoint 8102
-gpu match time 7.697408 ms
-num match found Gpu_I 3
-test Match images
-gpu match time 7.506944 ms
-num match found Gpu_II 3
-cpu time lapsed 26.000000 ms
-num match found cpu 3
-cntPoint 4029
-gpu match time 2.837504 ms
-num match found Gpu_I 1
-test Match images
-gpu match time 2.728960 ms
-num match found Gpu_II 2
+gpu match time 2.968576 ms
+num match found Gpu_II 412
 cpu time lapsed 9.000000 ms
-num match found cpu 1
-cntPoint 6037
-gpu match time 4.655104 ms
-num match found Gpu_I 3
+num match found cpu 396
+cntPoint 4443
+gpu match time 3.197952 ms
+num match found Gpu_I 645
 test Match images
-gpu match time 4.531200 ms
-num match found Gpu_II 5
-cpu time lapsed 15.000000 ms
-num match found cpu 3
-cntPoint 6405
-gpu match time 5.369856 ms
-num match found Gpu_I 9
-test Match images
-gpu match time 5.252096 ms
-num match found Gpu_II 12
-cpu time lapsed 15.000000 ms
-num match found cpu 9
-cntPoint 7205
-gpu match time 5.899264 ms
-num match found Gpu_I 3
-test Match images
-gpu match time 5.738496 ms
-num match found Gpu_II 8
-cpu time lapsed 18.000000 ms
-num match found cpu 3
-cntPoint 4703
-gpu match time 3.277824 ms
-num match found Gpu_I 2
-test Match images
-gpu match time 3.173376 ms
-num match found Gpu_II 4
-cpu time lapsed 12.000000 ms
-num match found cpu 2
-cntPoint 4999
-gpu match time 3.263488 ms
-num match found Gpu_I 0
-test Match images
-gpu match time 3.128320 ms
-num match found Gpu_II 1
-cpu time lapsed 13.000000 ms
-num match found cpu 0
-cntPoint 5818
-gpu match time 4.858880 ms
-num match found Gpu_I 5
-test Match images
-gpu match time 4.536320 ms
-num match found Gpu_II 6
-cpu time lapsed 15.000000 ms
-num match found cpu 5
-cntPoint 4643
-gpu match time 3.134464 ms
-num match found Gpu_I 6
-test Match images
-gpu match time 3.034112 ms
-num match found Gpu_II 9
-cpu time lapsed 14.000000 ms
-num match found cpu 6
-cntPoint 5328
-gpu match time 3.915776 ms
-num match found Gpu_I 5
-test Match images
-gpu match time 3.758080 ms
-num match found Gpu_II 8
-cpu time lapsed 13.000000 ms
-num match found cpu 5
-cntPoint 4440
-gpu match time 3.105792 ms
-num match found Gpu_I 1
-test Match images
-gpu match time 2.979840 ms
-num match found Gpu_II 3
-cpu time lapsed 11.000000 ms
-num match found cpu 1
-cntPoint 3398
-gpu match time 2.606080 ms
-num match found Gpu_I 2
-test Match images
-gpu match time 2.582528 ms
-num match found Gpu_II 6
-cpu time lapsed 8.000000 ms
-num match found cpu 2
-cntPoint 4239
-gpu match time 2.716672 ms
-num match found Gpu_I 0
-test Match images
-gpu match time 2.686976 ms
-num match found Gpu_II 3
+gpu match time 3.101696 ms
+num match found Gpu_II 648
 cpu time lapsed 10.000000 ms
-num match found cpu 0
-cntPoint 8515
-gpu match time 8.288256 ms
-num match found Gpu_I 932
+num match found cpu 645
+cntPoint 4845
+gpu match time 2.891776 ms
+num match found Gpu_I 17
 test Match images
-gpu match time 8.228864 ms
-num match found Gpu_II 959
-cpu time lapsed 21.000000 ms
-num match found cpu 932
+gpu match time 2.871296 ms
+num match found Gpu_II 22
+cpu time lapsed 10.000000 ms
+num match found cpu 17
+cntPoint 4443
+gpu match time 3.067904 ms
+num match found Gpu_I 123
+test Match images
+gpu match time 3.000320 ms
+num match found Gpu_II 138
+cpu time lapsed 10.000000 ms
+num match found cpu 123
+cntPoint 4443
+gpu match time 2.976768 ms
+num match found Gpu_I 721
+test Match images
+gpu match time 2.882560 ms
+num match found Gpu_II 738
+cpu time lapsed 10.000000 ms
+num match found cpu 721
 ```
 
 * Image Output
