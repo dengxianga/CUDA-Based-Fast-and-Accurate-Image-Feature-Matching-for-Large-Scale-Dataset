@@ -20,11 +20,11 @@ An example of ‘large scale’ dataset: ~1000 camera pictures for a scene,~ 600
 
 # Algorithm Overview
 
-* Original image Matching Pipeline [1]
+* The original image Matching Pipeline [1] can be broke down into four major stages:
 ** Multi table (L tables) Hashing (feature descriptors (eg. SIFT (128 integers) binary hash codes (128 bits * L) )
 ** Candidates Look-up &Fetching O(L) 
-* Candidates ranking O(k : number of candidates) in Hamming space
-* Final validation in Euclidean space
+** Candidates ranking O(k : number of candidates) in Hamming space
+** Final validation in Euclidean space
 
 Algorithm review (1)  | Algorithm review (2)
 :-------------------------:  |:-------------------------: 
@@ -41,8 +41,12 @@ The slides from Prof. Jianbo Shi that best describes this http://cis.upenn.edu/~
 
 # GPU implementation details
 
-* Optimization: Global shared buffers for data storage + buffers per thread for quick sorting of candidate list 
-* More descriptions comming soon.
+* Optimization: I used two techniques for quick candidate fetching and ranking: global shared buffers for data storage + buffers per thread for quick sorting of candidate list 
+The motivation for using globaling shared buffers is to store feature information (SIFT and Hash) in more place, and re-use them more efficiently. For example, to do full matching of 
+700 hundred images, we will have 700*699/2 image matching pairs, but we only have to preallocate memories and store feature informations for 700 image data.
+Quantized linked lists: In my implementation, the hamming distance are naturally integer values range from 0 to 127, in the quantized linked list datastrucure
+ we have 128 buckets, with each bucket point to a list of candidates, i.e. the first bucket links to the candidates that are 0 hamming distance to the target hash code.
+In this way, the candidates are automatically sorted.
 
 # Sample results
 
@@ -54,6 +58,12 @@ Tsinghua Database, 1
 http://vision.ia.ac.cn/data/index.html
 
 # Performance Analysis
+
+* We typically concern with the sparsity of datastructure vs. the performance and speed up by GPU.
+The sparity is charesterized by the number of hash bits we are using. The reasoning we are concerning about the sparsity is because
+of the hash table structure: since all sift points are projected and quantized into hash codes, by controlling the 
+number of hash bits, similar features are more or less likely to be projected into a same hash bucket, which contains pointer to the candidate list.
+ The following are the testing results:
 
 * Sparsity of data structure (number of hash bits) vs. total time consumed vs. speed up  
 
