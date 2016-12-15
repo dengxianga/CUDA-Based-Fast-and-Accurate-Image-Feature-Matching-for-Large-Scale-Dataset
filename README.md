@@ -167,3 +167,11 @@ Matches: CPU pipline | Matches: GPU pipeline
 Matches: CPU pipline | Matches: GPU pipeline
 :-------------------------:  |:-------------------------: 
 <img src="img/matches_4_5_cpu_Cas.jpg" width="450">  | <img src="img/matches_gpu_4_5.jpg" width="450"> 
+
+Matches: CPU pipline | Matches: GPU pipeline
+:-------------------------:  |:-------------------------: 
+<img src="img/matches_2_3_cpu_Cas.jpg" width="450">  | <img src="img/matches_gpu_2_3.jpg" width="450"> 
+
+Matches: CPU pipline | Matches: GPU pipeline
+:-------------------------:  |:-------------------------: 
+<img src="img/matches_1_2_cpu_Cas.jpg" width="450">  | <img src="img/matches_gpu_1_2.jpg" width="450"> 
