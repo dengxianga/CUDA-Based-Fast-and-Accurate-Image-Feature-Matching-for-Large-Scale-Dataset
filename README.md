@@ -105,57 +105,134 @@ Dataset sources:
 ** outputing average number of features per query image
 
 ```
+cntPoint 7718
+gpu match time 6.834176 ms
+num match found Gpu_I 769
 test Match images
-gpu match time 3.198976 ms
-num match found Gpu 1483
-cpu time lapsed 11.000000 ms
-num match found cpu 1471
-cntPoint 4845
+gpu match time 6.563840 ms
+num match found Gpu_II 808
+cpu time lapsed 20.000000 ms
+num match found cpu 769
+cntPoint 6251
+gpu match time 4.924416 ms
+num match found Gpu_I 3
 test Match images
-gpu match time 3.473408 ms
-num match found Gpu 412
+gpu match time 4.724736 ms
+num match found Gpu_II 3
+cpu time lapsed 17.000000 ms
+num match found cpu 3
+cntPoint 8102
+gpu match time 7.697408 ms
+num match found Gpu_I 3
 test Match images
-gpu match time 3.485696 ms
-num match found Gpu 412
-cpu time lapsed 12.000000 ms
-num match found cpu 396
-cntPoint 4443
+gpu match time 7.506944 ms
+num match found Gpu_II 3
+cpu time lapsed 26.000000 ms
+num match found cpu 3
+cntPoint 4029
+gpu match time 2.837504 ms
+num match found Gpu_I 1
 test Match images
-gpu match time 3.593216 ms
-num match found Gpu 648
-test Match images
-gpu match time 3.564544 ms
-num match found Gpu 648
-cpu time lapsed 11.000000 ms
-num match found cpu 645
-cntPoint 4845
-test Match images
-gpu match time 3.223552 ms
-num match found Gpu 22
-test Match images
-gpu match time 3.219424 ms
-num match found Gpu 22
+gpu match time 2.728960 ms
+num match found Gpu_II 2
 cpu time lapsed 9.000000 ms
-num match found cpu 17
-cntPoint 4443
+num match found cpu 1
+cntPoint 6037
+gpu match time 4.655104 ms
+num match found Gpu_I 3
 test Match images
-gpu match time 3.403776 ms
-num match found Gpu 138
+gpu match time 4.531200 ms
+num match found Gpu_II 5
+cpu time lapsed 15.000000 ms
+num match found cpu 3
+cntPoint 6405
+gpu match time 5.369856 ms
+num match found Gpu_I 9
 test Match images
-gpu match time 3.384320 ms
-num match found Gpu 138
+gpu match time 5.252096 ms
+num match found Gpu_II 12
+cpu time lapsed 15.000000 ms
+num match found cpu 9
+cntPoint 7205
+gpu match time 5.899264 ms
+num match found Gpu_I 3
+test Match images
+gpu match time 5.738496 ms
+num match found Gpu_II 8
+cpu time lapsed 18.000000 ms
+num match found cpu 3
+cntPoint 4703
+gpu match time 3.277824 ms
+num match found Gpu_I 2
+test Match images
+gpu match time 3.173376 ms
+num match found Gpu_II 4
+cpu time lapsed 12.000000 ms
+num match found cpu 2
+cntPoint 4999
+gpu match time 3.263488 ms
+num match found Gpu_I 0
+test Match images
+gpu match time 3.128320 ms
+num match found Gpu_II 1
+cpu time lapsed 13.000000 ms
+num match found cpu 0
+cntPoint 5818
+gpu match time 4.858880 ms
+num match found Gpu_I 5
+test Match images
+gpu match time 4.536320 ms
+num match found Gpu_II 6
+cpu time lapsed 15.000000 ms
+num match found cpu 5
+cntPoint 4643
+gpu match time 3.134464 ms
+num match found Gpu_I 6
+test Match images
+gpu match time 3.034112 ms
+num match found Gpu_II 9
+cpu time lapsed 14.000000 ms
+num match found cpu 6
+cntPoint 5328
+gpu match time 3.915776 ms
+num match found Gpu_I 5
+test Match images
+gpu match time 3.758080 ms
+num match found Gpu_II 8
+cpu time lapsed 13.000000 ms
+num match found cpu 5
+cntPoint 4440
+gpu match time 3.105792 ms
+num match found Gpu_I 1
+test Match images
+gpu match time 2.979840 ms
+num match found Gpu_II 3
+cpu time lapsed 11.000000 ms
+num match found cpu 1
+cntPoint 3398
+gpu match time 2.606080 ms
+num match found Gpu_I 2
+test Match images
+gpu match time 2.582528 ms
+num match found Gpu_II 6
 cpu time lapsed 8.000000 ms
-num match found cpu 123
-cntPoint 4443
+num match found cpu 2
+cntPoint 4239
+gpu match time 2.716672 ms
+num match found Gpu_I 0
 test Match images
-gpu match time 3.230720 ms
-num match found Gpu 738
-test Match images
-gpu match time 3.232768 ms
-num match found Gpu 738
+gpu match time 2.686976 ms
+num match found Gpu_II 3
 cpu time lapsed 10.000000 ms
-num match found cpu 721
-
+num match found cpu 0
+cntPoint 8515
+gpu match time 8.288256 ms
+num match found Gpu_I 932
+test Match images
+gpu match time 8.228864 ms
+num match found Gpu_II 959
+cpu time lapsed 21.000000 ms
+num match found cpu 932
 ```
 
 * Image Output
@@ -183,3 +260,8 @@ Matches: CPU pipline | Matches: GPU pipeline
 Matches: CPU pipline | Matches: GPU pipeline
 :-------------------------:  |:-------------------------: 
 <img src="img/matches_3_24_cpu_Cas.jpg" width="450">  | <img src="img/matches_gpu_3_24.jpg" width="450"> 
+
+# Build Intructions
+
+** Toolboxes needed: 1. OpenCV (for visual debugging) 2. PCL (optional, for visualizing point cloud)
+**  
