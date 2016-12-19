@@ -1,9 +1,10 @@
 # CUDA-Based-Fast-and-Accurate-Image-Feature-Matching-for-Large-Scale-Dataset
 
 ## Xiang Deng
-## https://github.com/dengxianga/dengxianga.github.io
+	* https://github.com/dengxianga/dengxianga.github.io
 
 (Date: 12/15/2016)
+Updated: 12/18/2016
 
 # Background
 
@@ -128,6 +129,24 @@ Increased sparsity vs. time (three implementations) | Increased sparsity vs incr
 	due to the difference in scaling, lighting and angle, it's less likely to find two images that are "close" to each other. In light of this reasoning,
 	we can see that the candidate list of feature matching will be a lot shorter. Because of this reason, the sparsity of the datastructure saturates earlier as we increase the number of bits.
 
+* Update on linked list buffers: using Dynamic Memory Allocation instead of preallocated memory, here is the improvement on "qinghuaxuetang" :
+
+8 bits, 6 tables t| 8 bits, 6 tables
+:-------------------------:  |:-------------------------: 
+<img src="img/Picture21.png" width="450">  | <img src="img/Picture22.png" width="450"> 
+
+10 bits, 6 tables | 10 bits, 6 tables
+:-------------------------:  |:-------------------------: 
+<img src="img/Picture23.png" width="450">  | <img src="img/Picture24.png" width="450"> 
+
+12 bits, 6 tables | 12 bits, 6 tables
+:-------------------------:  |:-------------------------: 
+<img src="img/Picture25.png" width="450">  | <img src="img/Picture26.png" width="450"> 
+
+Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
+:-------------------------:  |:-------------------------: 
+<img src="img/Picture27.png" width="450">  | <img src="img/Picture28.png" width="450"> 
+	
 # SfM demos on Large dataset
 
 * Sparse clouds
