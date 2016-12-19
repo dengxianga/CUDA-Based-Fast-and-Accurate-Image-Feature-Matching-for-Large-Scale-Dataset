@@ -137,7 +137,7 @@ Increased sparsity vs. time (three implementations) | Increased sparsity vs incr
 
 Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
 :-------------------------:  |:-------------------------: 
-<img src="img/Picture27.png" width="450">  | <img src="img/Picture28.png" width="450"> 
+<img src="img/Picture24.png" width="450">  | <img src="img/Picture25.png" width="450"> 
 	
 # SfM demos on Large dataset
 
