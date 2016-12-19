@@ -131,17 +131,9 @@ Increased sparsity vs. time (three implementations) | Increased sparsity vs incr
 
 * Update on linked list buffers: using Dynamic Memory Allocation instead of preallocated memory, here is the improvement on "qinghuaxuetang" :
 
-8 bits, 6 tables t| 8 bits, 6 tables
-:-------------------------:  |:-------------------------: 
-<img src="img/Picture21.png" width="450">  | <img src="img/Picture22.png" width="450"> 
-
-10 bits, 6 tables | 10 bits, 6 tables
-:-------------------------:  |:-------------------------: 
-<img src="img/Picture23.png" width="450">  | <img src="img/Picture24.png" width="450"> 
-
-12 bits, 6 tables | 12 bits, 6 tables
-:-------------------------:  |:-------------------------: 
-<img src="img/Picture25.png" width="450">  | <img src="img/Picture26.png" width="450"> 
+8 bits, 6 tables t| 8 bits, 6 tables | 12 bits, 6 tables
+:-------------------------:  |:-------------------------:  |:-------------------------: 
+<img src="img/Picture21.png" width="450">  | <img src="img/Picture22.png" width="450"> | <img src="img/Picture23.png" width="450"> 
 
 Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
 :-------------------------:  |:-------------------------: 
