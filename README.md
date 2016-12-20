@@ -144,7 +144,7 @@ Increased sparsity vs. time (three implementations) | Increased sparsity vs incr
 
 Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
 :-------------------------:  |:-------------------------: 
-<img src="img/Picture26.png" width="450">  | <img src="img/Picture27.png" width="450"> 
+<img src="img/Picture27.png" width="450">  | <img src="img/Picture26.png" width="450"> 
 	   
 * Why CUDA doesn't accelerates a lot (eg. 100 to 1000 times)?
 	* A probable reason is because of the compuation of hamming distance only requires 1 or 2 CPU/GPU cycles, while the time consumed by writing the result to memory 
