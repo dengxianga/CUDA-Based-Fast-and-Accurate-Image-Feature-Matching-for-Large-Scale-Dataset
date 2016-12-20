@@ -18,6 +18,8 @@ The original algorithm which is based on Locality Sensitive Hashing (LSH), accel
 In today's "big data" regime, we hope to have a broader contribution to the subfields including object recognition/classification, motion estimation and image indexing.
 An example of ‘large scale’ dataset: ~1000 camera pictures for a scene,~ 6000 features per image on average, number of all image pairs =500*999
 
+ 
+ <img src="img/thumbnailB.gif" width="600">
 
 # Algorithm Overview
 
