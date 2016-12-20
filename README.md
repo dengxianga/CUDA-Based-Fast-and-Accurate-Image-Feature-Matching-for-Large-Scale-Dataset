@@ -155,13 +155,19 @@ Increased sparsity vs. time (three implementations) | Increased sparsity vs incr
 
 * Sparse clouds
 
-Taj.Mahal  
+Taj.Mahal  | Tsinghua.Life.Science
+:-------------------------:  |:-------------------------: 
+ <img src="img/sfmresult2.gif" width="450"> |<img src="img/sfmresult3.gif" width="450">
 
-<img src="img/sfmresult2.gif"> 
+* Dense clouds
 
-Tsinghua.Life.Science 
-
-<img src="img/sfmresult3.gif">
+Norte Dame  | Statue of Liberty
+:-------------------------:  |:-------------------------: 
+ <img src="img/sfmresult5.gif" width="450"> |<img src="img/sfmresult6.gif" width="450">
+ 
+Tsinghuamen  | Tsinghuaxuetang
+ :-------------------------:  |:-------------------------: 
+ <img src="img/sfmresult7.gif" width="450"> |<img src="img/sfmresult8.gif" width="450">
 
 Dataset sources: 
 
