@@ -169,9 +169,7 @@ Tsinghuamen  | Tsinghuaxuetang
  :-------------------------:  |:-------------------------: 
  <img src="img/sfmresult7gif.gif" width="450"> | <img src="img/sfmresult8gif.gif" width="450">
 
- 
-  :-------------------------:  |:-------------------------: 
- <img src="img/sfmresult7gif.gif" width="450"> | <img src="img/sfmresult8gif.gif" width="450">
+  
 Dataset sources: 
 
 1. Flickr Database
