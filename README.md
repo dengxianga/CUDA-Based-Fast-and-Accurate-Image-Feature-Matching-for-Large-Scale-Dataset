@@ -4,7 +4,7 @@
 	* https://github.com/dengxianga/dengxianga.github.io
 
 (Date: 12/15/2016)
-Updated: 12/18/2016
+Updated: 12/19/2016
 
 # Background
 
@@ -75,7 +75,8 @@ The following are the testing results (dataset: qinghuaxuetang):
 
 * Sparsity of data structure (number of hash bits) vs. total time consumed vs. speed up  
 
-	* Testing on three implementations: original algorithm on CPU, GPU, and slightly improved GPU version that borrows some ideas mentioned in my new draft of paper (not submitted yet).
+	* Testing on three implementations: original algorithm on CPU, GPU, and slightly improved GPU version that aims to enhance the likelihood of finding the 
+true match in the candidate list; such minor improvement borrows some ideas mentioned in my new draft of paper (not submitted yet).
 
 8 bits, 6 tables t| 8 bits, 6 tables
 :-------------------------:  |:-------------------------: 
@@ -138,6 +139,17 @@ Increased sparsity vs. time (three implementations) | Increased sparsity vs incr
 Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
 :-------------------------:  |:-------------------------: 
 <img src="img/Picture24.png" width="450">  | <img src="img/Picture25.png" width="450"> 
+
+* Memory optimization continued: I further breakdown my buffer data structure into independent buffers instead, here is the most recent improvement:
+
+Increased sparsity vs. time (three implementations) | Increased sparsity vs increased speed up on GPU
+:-------------------------:  |:-------------------------: 
+<img src="img/Picture26.png" width="450">  | <img src="img/Picture27.png" width="450"> 
+	
+* Why CUDA doesn't accelerates a lot (eg. 100 to 1000 times)?
+	* A probable reason is because of the compuation of hamming distance only requires 1 or 2 CPU/GPU cycles, while the time consumed by writing the result to memory 
+	can't really be ignored in this case. In a typical benchmark (1000 features with an average of 20 hamming distance computation per feature), writing results to global memory slows down by 10x or more! (0.037248ms vs 0.003520ms).
+
 	
 # SfM demos on Large dataset
 
