@@ -170,7 +170,12 @@ Norte Dame  | Statue of Liberty
 Tsinghuamen  | Tsinghuaxuetang
  :-------------------------:  |:-------------------------: 
  <img src="img/sfmresult7gif.gif" width="450"> | <img src="img/sfmresult8gif.gif" width="450">
-
+ 
+ 
+ Tsinghuamen  | Tsinghuaxuetang
+ :-------------------------:  |:-------------------------: 
+ <img src="img/sfmresult5gif.gif" width="450"> | <img src="img/sfmresult6gif.gif" width="450">
+ <img src="img/sfmresult7gif.gif" width="450"> | <img src="img/sfmresult8gif.gif" width="450">
   
 Dataset sources: 
 
