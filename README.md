@@ -163,11 +163,11 @@ Taj.Mahal  | Tsinghua.Life.Science
 
 Norte Dame  | Statue of Liberty
 :-------------------------:  |:-------------------------: 
- <img src="img/sfmresult5.gif" width="450"> |<img src="img/sfmresult6.gif" width="450">
+ <img src="img/sfmresult5.gif" width="450"> | <img src="img/sfmresult6.gif" width="450">
  
 Tsinghuamen  | Tsinghuaxuetang
  :-------------------------:  |:-------------------------: 
- <img src="img/sfmresult7.gif" width="450"> |<img src="img/sfmresult8.gif" width="450">
+ <img src="img/sfmresult7.gif" width="450"> | <img src="img/sfmresult8.gif" width="450">
 
 Dataset sources: 
 
